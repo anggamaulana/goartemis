@@ -8,10 +8,10 @@ import (
 )
 
 const (
-	brokerAddr  = "10.0.8.116:61616"
-	destination = "coster_test_queue"
+	brokerAddr  = "127.0.0.1:61616"
+	destination = "artemis_test_queue"
 	user        = "admin"
-	password    = "dordordor"
+	password    = "admin"
 )
 
 func main() {
