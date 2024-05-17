@@ -35,7 +35,7 @@ func main() {
 		Enc:    1,
 	}
 
-	err := receiver.InitConn()
+	err := receiver.Init()
 	if err != nil {
 		panic(err)
 	}
