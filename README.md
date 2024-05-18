@@ -2,6 +2,7 @@ Go library to send and receive messages to/from ActiveMQ Artemis using github.co
 
 inspired by https://github.com/JanikL/go-artemis, I add some functionality for my need :
 - initialize connection once and reuse it in all project
+- add user and password
 - simple approach to reconnecting when publisher throwing error or consumer not receiving any message 
 
 example scenario when disconecting from server 
