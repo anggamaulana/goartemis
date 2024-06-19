@@ -72,7 +72,7 @@ func main() {
 	}
 	fmt.Println("publisher connected")
 
-	err = sender.Send(map[string]interface{}{"status": "ok1"}, map[string]interface{}{"status": "ok2"})
+	err = sender.SendTo(destination, map[string]interface{}{"status": "ok1"}, map[string]interface{}{"status": "ok2"})
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -86,7 +86,7 @@ func main() {
 	receiver.Disconnect(false)
 
 	for i := 0; i < 10; i++ {
-		err = sender.Send(map[string]interface{}{"status": "ok1"}, map[string]interface{}{"status": "ok2"})
+		err = sender.SendTo(destination, map[string]interface{}{"status": "ok1"}, map[string]interface{}{"status": "ok2"})
 		if err != nil {
 			fmt.Println(err)
 		}
